@@ -1,0 +1,16 @@
+02/22/2024	20:14:58	fc740698-d545-4b0d-ad33-d49810290aa6	GET	undefined	/
+02/22/2024	20:14:58	159fc9fe-2b1c-49c5-b77b-718ceb0fc791	GET	undefined	/css/styles.css
+02/22/2024	20:14:58	4c487930-7918-43c4-9ab0-1509ba0fec26	GET	undefined	/images/img.png
+02/22/2024	20:17:39	eba49b17-533a-49d5-bbf2-5a778f9322b5	OPTIONS	https://www.google.com	/
+02/22/2024	20:17:39	999da65a-c5ab-40cb-af3a-3a6e06caca6e	GET	https://www.google.com	/
+02/22/2024	20:22:01	a8e615d5-6312-4895-97c3-6ba806b3a17a	GET	https://www.google.com	/
+02/22/2024	20:39:58	001b67ad-83c0-41a4-8e4d-04755adcc25f	GET	undefined	/
+02/22/2024	20:39:58	cedd028c-a070-4944-8772-a567829c0c58	GET	undefined	/css/styles.css
+02/22/2024	20:39:58	58a4e85a-2df1-45d9-9966-641b541dfa7e	GET	undefined	/images/img.png
+02/22/2024	20:49:17	f7e66e8d-4f5b-4694-aed2-cfb5454ee6d9	GET	undefined	/
+02/22/2024	20:49:17	34fbf44b-ca36-4165-ba74-134d00bff539	GET	undefined	/css/styles.css
+02/22/2024	20:49:17	620752f4-4bef-4cad-b7e0-8398ec1a3471	GET	undefined	/images/img.png
+02/22/2024	20:59:11	cc37263f-f1ba-49d1-bec3-12ecc889c97e	GET	undefined	/
+02/22/2024	20:59:11	507e2298-89b9-4980-81d9-931302499ad9	GET	undefined	/css/styles.css
+02/22/2024	20:59:11	6fb8ead9-9a31-4630-9e14-b6cab77d4528	GET	undefined	/images/img.png
+02/22/2024	21:00:59	93b03c29-266d-4ff1-b37d-ecb2636b33f1	GET	undefined	/check

@@ -1,13 +1,32 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const { logger } = require("./middleware/logEvents");
+const errorHangler = require("./middleware/errorHangler");
+const cors = require("cors");
+const { error } = require("console");
 const PORT = process.env.PORT || 3500;
 
+//Cross origin resource sharing
+const whitelist = [
+  "https://www.google.com/",
+  "http://localhost:3500",
+  "http://127.0.1:5500",
+];
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (whitelist.indexOf(origin) !== -1 || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not Allowed by CROS"));
+    }
+  },
+  OptionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
 //custom middle ware
-app.use((req, res, next) => {
-  console.log(`${req.method} ${req.path}`);
-  next();
-});
+app.use(logger);
 
 // built-in middle ware
 app.use(express.urlencoded({ extended: false }));
@@ -59,7 +78,16 @@ const three = (req, res) => {
 
 app.get("/chain(.html)?", [one, two, three]);
 
-app.get("/*", (req, res) => {
-  res.status(404).sendFile(path.join(__dirname, "views", "404.html"));
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join(__dirname, "views", "404.html"));
+  }else  if (req.accepts("json")) {
+    res.json({error: '404 Not Found'});
+  }else{
+    res.type('text').send('404 Not Found')
+  }
 });
+
+app.use(errorHangler);
 app.listen(PORT, () => console.log(`Server running on PORT: ${PORT}`));
