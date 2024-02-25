@@ -8,3 +8,8 @@
 02/24/2024	11:56:43	884c93aa-4eb5-4867-b15a-8d9ff69c9fd0	TypeError: Cannot read properties of undefined (reading 'id')
 02/24/2024	11:58:22	c818e386-548c-4663-95dc-2f0cd24ce5df	TypeError: Cannot read properties of undefined (reading 'id')
 02/24/2024	18:56:25	61c0aa89-28a8-4c8a-8d6e-d2bcac2b2a8b	TypeError: Cannot read properties of undefined (reading 'id')
+02/25/2024	08:52:58	a9088489-ef01-425b-9a51-ba810ddd6e9f	SyntaxError: Unexpected token ''', ..."
+  "pwd": 'Reddy@123"... is not valid JSON
+02/25/2024	08:53:23	0e5f430b-d92f-4618-bd43-70bd9a25966a	SyntaxError: Unexpected token ''', ..."
+  "pwd": 'Reddy$123"... is not valid JSON
+02/25/2024	09:05:45	0385346e-9347-4d9a-a073-3e67be416ffa	SyntaxError: Unexpected token ''', ..."th","pwd":'1234$sta'"... is not valid JSON

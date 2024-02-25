@@ -27,6 +27,8 @@ app.use("/employee", express.static(path.join(__dirname, "/public")));
 app.use("/", require("./routers/root"));
 app.use("/subdir", require("./routers/subdir"));
 app.use("/employees",require("./routers/api/employees"));
+app.use("/register", require("./routers/register"));
+app.use("/auth", require("./routers/auth"));
 
 //Router handlers
 app.get(
