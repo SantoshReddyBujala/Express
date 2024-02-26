@@ -12,15 +12,20 @@ const handleLogin = async (req, res) => {
     return res
       .status(400)
       .json({ message: "Username and Password are requlired" });
-  const foundUser = usersDB.users.find((person) => person.username == user);
-  if (!foundUser) return res.status(409); // Unauthorized
+  const foundUser = usersDB.users.find((person) => person.username === user);
+  if (!foundUser) return res.sendStatus(401); // Unauthorized
   //evaluate user
   const match = await bcrypt.compare(pwd, foundUser.password);
-  if (match) {
-    //create JWTs
-    res.json({ success: `User logged in successfuly ${user}` });
-  } else {
-    res.status(401);
+  try {
+    if (match) {
+      //create JWTs
+      res.json({ success: `User logged in successfuly ${user}` });
+    } else {
+      //console.log("Hitting here")
+      res.sendStatus(401);
+    }
+  } catch (err) {
+    console.error(err);
   }
 };
 
