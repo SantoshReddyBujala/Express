@@ -3,10 +3,16 @@ const app = express();
 const path = require("path");
 const { logger } = require("./middleware/logEvents");
 const errorHangler = require("./middleware/errorHangler");
-const corsOptions = require("./config/corsOptions")
+const corsOptions = require("./config/corsOptions");
 const cors = require("cors");
 const { error } = require("console");
+const cookieParser = require("cookie-parser");
+const verifyJWT = require("./middleware/verifyJWT");
+const credentials = require("./middleware/credentials");
+
 const PORT = process.env.PORT || 3500;
+
+app.use(credentials);
 
 app.use(cors(corsOptions));
 
@@ -18,17 +24,24 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.json());
 
+//middleware for cookies
+app.use(cookieParser());
+
 //Serve static files
-app.use('/', express.static(path.join(__dirname, "/public")));
+app.use("/", express.static(path.join(__dirname, "/public")));
 app.use("/subdir", express.static(path.join(__dirname, "/public")));
 app.use("/employee", express.static(path.join(__dirname, "/public")));
 
 //serve routes
 app.use("/", require("./routers/root"));
 app.use("/subdir", require("./routers/subdir"));
-app.use("/employees",require("./routers/api/employees"));
 app.use("/register", require("./routers/register"));
 app.use("/auth", require("./routers/auth"));
+app.use("/refresh", require("./routers/refresh"));
+app.use("/logout", require("./routers/logout"));
+
+app.use(verifyJWT);
+app.use("/employees", require("./routers/api/employees"));
 
 //Router handlers
 app.get(

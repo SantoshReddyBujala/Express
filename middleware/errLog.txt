@@ -13,3 +13,11 @@
 02/25/2024	08:53:23	0e5f430b-d92f-4618-bd43-70bd9a25966a	SyntaxError: Unexpected token ''', ..."
   "pwd": 'Reddy$123"... is not valid JSON
 02/25/2024	09:05:45	0385346e-9347-4d9a-a073-3e67be416ffa	SyntaxError: Unexpected token ''', ..."th","pwd":'1234$sta'"... is not valid JSON
+03/02/2024	09:38:41	4ca807a6-a611-4a0b-bcb7-05b8ba19e459	TypeError: authHeader.spit is not a function
+03/02/2024	11:37:20	faf05006-a0dd-4699-a39c-f19a394b2e99	TypeError: console is not a function
+03/02/2024	21:11:08	e410f52d-f44b-48ee-af77-c92258430ba9	Error: Not Allowed by CROS
+03/02/2024	21:11:39	1e7f1734-a366-4a1c-a17f-d14a27c65b34	Error: Not Allowed by CROS
+03/02/2024	21:12:48	5801029e-7eba-447b-8de4-5554134e329b	Error: Not Allowed by CROS
+03/02/2024	21:15:01	34981f5c-f667-4f10-8fe4-c44b7e52683e	Error: Not Allowed by CROS
+03/02/2024	21:27:51	20524204-c1a3-4b89-a757-1259c303f2e8	ReferenceError: origin is not defined
+03/02/2024	21:31:21	f250afd4-0fb0-417a-a622-ce5332eab944	ReferenceError: origin is not defined
