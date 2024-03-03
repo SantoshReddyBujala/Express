@@ -1,5 +1,4 @@
 const express = require("express");
-const app = express();
 const path = require("path");
 const { logger } = require("./middleware/logEvents");
 const errorHangler = require("./middleware/errorHangler");
@@ -9,6 +8,7 @@ const { error } = require("console");
 const cookieParser = require("cookie-parser");
 const verifyJWT = require("./middleware/verifyJWT");
 const credentials = require("./middleware/credentials");
+const app = express();
 
 const PORT = process.env.PORT || 3500;
 

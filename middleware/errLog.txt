@@ -21,3 +21,12 @@
 03/02/2024	21:15:01	34981f5c-f667-4f10-8fe4-c44b7e52683e	Error: Not Allowed by CROS
 03/02/2024	21:27:51	20524204-c1a3-4b89-a757-1259c303f2e8	ReferenceError: origin is not defined
 03/02/2024	21:31:21	f250afd4-0fb0-417a-a622-ce5332eab944	ReferenceError: origin is not defined
+03/03/2024	08:20:05	7d9a4931-b5da-4b3f-8b71-4b2b122a7851	Error: Not Allowed by CROS
+03/03/2024	08:27:06	760241ed-f8de-40af-8948-4676cb0f6aac	ReferenceError: req is not defined
+03/03/2024	08:27:34	082d089f-2906-44ec-9bb0-0dde65a61e38	TypeError: req.header is not a function
+03/03/2024	08:28:25	553c09a3-6729-40da-880f-6d81a7bf3672	Error: Not Allowed by CROS
+03/03/2024	08:29:27	1e498915-7567-4ff8-9990-6983e01071f7	Error: Not Allowed by CROS
+03/03/2024	08:32:36	9eba8f1d-8c05-49c3-8020-774993f80c19	Error: Not Allowed by CROS
+03/03/2024	08:33:28	5397bce3-c032-417d-9766-4e924d10e589	Error: Not Allowed by CROS
+03/03/2024	08:36:01	5bee1cf4-18db-4293-92fb-0aceead5a04f	Error: Not Allowed by CROS
+03/03/2024	08:36:53	30ddcc2c-7306-468c-960e-03793a8a3738	Error: Not Allowed by CROS
