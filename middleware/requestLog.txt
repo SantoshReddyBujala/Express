@@ -267,3 +267,6 @@
 03/03/2024	10:29:10	c3ae0ba8-c48a-41c9-907f-77f1bdc76cdb	GET	undefined	/refresh
 03/03/2024	10:29:16	b53af8cd-dcd9-47cd-aecc-ec7990f04997	GET	undefined	/logout
 03/03/2024	10:29:20	4d9190cf-abc7-4e0e-a581-8a4098523b7b	POST	undefined	/auth
+03/06/2024	15:09:15	47340904-e360-4a7a-be6b-ae25bbcf5d32	POST	undefined	/register
+03/06/2024	15:09:37	1aa18595-836e-4072-914b-038f3a5bcd9f	POST	undefined	/register
+03/06/2024	15:17:33	86d2d73f-265d-49b8-85df-f9759cc227a6	POST	undefined	/register
