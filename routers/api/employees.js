@@ -8,12 +8,11 @@ router
   .route("/")
   .get(employeeController.getAllEmployees)
   .post(verifyRoles(ROLES_LIST.admin), employeeController.createNewEmployee)
-  .put(
-    verifyRoles(ROLES_LIST.admin, ROLES_LIST.client),
-    employeeController.updateEmployee
-  )
+  .put(verifyRoles(ROLES_LIST.admin), employeeController.updateEmployee)
   .delete(verifyRoles(ROLES_LIST.admin), employeeController.deleteEmployee);
 
-router.route("/:id").get(employeeController.getEmployee);
+router
+  .route("/:id")
+  .get(employeeController.getEmployee);
 
 module.exports = router;
